@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active: dev
+
+---
+server:
+  port: 8201
+  
+spring:
+  profiles: dev
+  application: springcloud-provider-dept
+
+#Eureka配置
+eureka:
+  client:
+    service-url: # 监控页面
+      defaultZone: http://cloudeureka7001.com:7001/eureka/,http://cloudeureka7002.com:7002/eureka/,http://cloudeureka7003.com:7003/eureka/
+
+---
+server:
+  port: 8202
+  
+spring:
+  profiles: test
+  application: springcloud-provider-dept
+
+#Eureka配置
+eureka:
+  client:
+    service-url: # 监控页面
+      defaultZone: http://cloudeureka7001.com:7001/eureka/,http://cloudeureka7002.com:7002/eureka/,http://cloudeureka7003.com:7003/eureka/
