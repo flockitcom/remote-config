@@ -15,7 +15,7 @@ spring:
 eureka:
   client:
     service-url: # 监控页面
-      defaultZone: http://cloudeureka7001.com:7001/eureka/,http://cloudeureka7002.com:7002/eureka/,http://cloudeureka7003.com:7003/eureka/
+      defaultZone: http://cloudeureka7001.com:7001/eureka/
 
 ---
 server:
@@ -30,4 +30,4 @@ spring:
 eureka:
   client:
     service-url: # 监控页面
-      defaultZone: http://cloudeureka7001.com:7001/eureka/,http://cloudeureka7002.com:7002/eureka/,http://cloudeureka7003.com:7003/eureka/
+      defaultZone: http://cloudeureka7001.com:7001/eureka/
