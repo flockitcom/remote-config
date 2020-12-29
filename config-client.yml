@@ -8,7 +8,8 @@ server:
   
 spring:
   profiles: dev
-  application: springcloud-provider-dept
+  application: 
+  name: springcloud-provider-dept
 
 #Eureka配置
 eureka:
@@ -22,7 +23,8 @@ server:
   
 spring:
   profiles: test
-  application: springcloud-provider-dept
+  application: 
+  name: springcloud-provider-dept
 
 #Eureka配置
 eureka:
